@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUB? | Social Logistics</title>
+    <style>
+        :root {
+            --burgundy: #4a0404; 
+            --gold: #d4af37; 
+            --black: #0a0a0a;
+            --text: #e0e0e0;
+        }
+
+        body {
+            background-color: var(--black);
+            color: var(--text);
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        /* The 'Cyber' Scanline Effect */
+        body::before {
+            content: " ";
+            display: block;
+            position: fixed;
+            top: 0; left: 0; bottom: 0; right: 0;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            z-index: 999;
+            background-size: 100% 2px, 3px 100%;
+            pointer-events: none;
+        }
+
+        header {
+            width: 100%;
+            padding: 20px;
+            border-bottom: 1px solid var(--burgundy);
+            background: rgba(74, 4, 4, 0.2);
+        }
+
+        .status-bar {
+            font-size: 0.7rem;
+            color: var(--gold);
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+
+        .hero {
+            padding: 40px 20px;
+            max-width: 500px;
+        }
+
+        h1 {
+            color: var(--gold);
+            font-size: 3.5rem;
+            margin: 0;
+            letter-spacing: -2px;
+            text-transform: uppercase;
+        }
+
+        .sub-head {
+            color: var(--burgundy);
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .founder-counter {
+            border: 1px solid var(--gold);
+            padding: 15px;
+            margin: 20px 0;
+            background: rgba(74, 4, 4, 0.1);
+        }
+
+        input[type="email"] {
+            width: 100%;
+            padding: 15px;
+            background: #111;
+            border: 1px solid var(--burgundy);
+            color: var(--gold);
+            font-family: inherit;
+            box-sizing: border-box;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .cta-button {
+            background-color: var(--gold);
+            color: var(--black);
+            padding: 18px;
+            border: none;
+            font-weight: bold;
+            font-size: 1rem;
