@@ -41,6 +41,7 @@
             padding: 20px;
             border-bottom: 1px solid var(--burgundy);
             background: rgba(74, 4, 4, 0.2);
+            box-sizing: border-box;
         }
 
         .status-bar {
@@ -53,6 +54,7 @@
         .hero {
             padding: 40px 20px;
             max-width: 500px;
+            z-index: 10;
         }
 
         h1 {
@@ -97,3 +99,71 @@
             border: none;
             font-weight: bold;
             font-size: 1rem;
+            text-transform: uppercase;
+            width: 100%;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: white;
+            box-shadow: 0 0 20px var(--gold);
+        }
+
+        .feature-grid {
+            text-align: left;
+            padding: 20px;
+            max-width: 500px;
+            font-size: 0.8rem;
+            z-index: 10;
+        }
+
+        .feature-line {
+            border-left: 2px solid var(--gold);
+            padding-left: 10px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="status-bar">NETWORK STATUS: INITIALIZING // LIVERPOOL SECTOR</div>
+    <div style="font-size: 0.8rem; opacity: 0.7;">BLACKTHORNE INDUSTRIES</div>
+</header>
+
+<div class="hero">
+    <h1>PUB?</h1>
+    <div class="sub-head">LIVERPOOL'S SOCIAL LOGISTICS ENGINE</div>
+    
+    <p style="font-size: 0.9rem; line-height: 1.4;">Forget the group chat chaos. See the radar, find your circle, and lock down your night.</p>
+
+    <div class="founder-counter">
+        <span style="color: var(--gold); font-size: 1.1rem;">FOUNDER 100: 84 SPOTS REMAINING</span>
+        <p style="font-size: 0.7rem; margin-top: 5px;">Lifetime access to The Vault (Drunk Mode) + Elite Badge.</p>
+    </div>
+
+    <form action="https://formspree.io/f/xlgwjoyl" method="POST">
+        <input type="email" name="email" placeholder="ENTER PERSONNEL EMAIL" required>
+        <button type="submit" class="cta-button">Request Beta Access</button>
+    </form>
+</div>
+
+<div class="feature-grid">
+    <div class="feature-line">
+        <strong>THE RADAR:</strong> Live density map of Liverpool venues.
+    </div>
+    <div class="feature-line">
+        <strong>THE VAULT:</strong> 12-hour 'Drunk Mode' text protection protocol.
+    </div>
+    <div class="feature-line">
+        <strong>HYBRID INTEL:</strong> Free matching. Free messaging. No barriers.
+    </div>
+</div>
+
+<footer style="padding: 40px; font-size: 0.6rem; opacity: 0.4; z-index: 10;">
+    SYS_ID: BLACKTHORNE_LPL_001 // © 2026 BLACKTHORNE INDUSTRIES LTD
+</footer>
+
+</body>
+</html>
