@@ -179,45 +179,28 @@
             box-shadow: 0 10px 25px rgba(182, 154, 94, 0.25);
         }
 
-        .features {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-            max-width: 500px;
-            width: 100%;
-            padding: 0 20px 80px;
-            box-sizing: border-box;
-            text-align: left;
-        }
-
-        .feature-item {
-            background: var(--bg-card);
-            border-left: 4px solid var(--secondary-burgundy);
-            padding: 24px;
-            border-radius: 0 12px 12px 0;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-            transition: transform 0.3s;
-        }
-        
-        .feature-item:hover {
-            transform: scale(1.02);
-            border-left-color: var(--primary-gold);
-        }
-
-        .feature-item strong {
-            color: var(--primary-gold);
-            display: block;
-            margin-bottom: 6px;
-            font-size: 1.15rem;
-            font-weight: 700;
-        }
-
-        .feature-item p {
-            margin: 0;
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-            line-height: 1.5;
-        }
+        <div class="features-grid">
+    <div class="feature-bulb">
+        <strong>The Radar</strong>
+        <p>A live heatmap showing exactly which venues in Liverpool are going off right now.</p>
+    </div>
+    <div class="feature-bulb">
+        <strong>Zero Limits</strong>
+        <p>Unlimited swiping and matching. We don't cap your social life like the other apps do.</p>
+    </div>
+    <div class="feature-bulb">
+        <strong>Total Transparency</strong>
+        <p>See exactly who is interested in you instantly. No blurred profiles, no paywalls to reveal them.</p>
+    </div>
+    <div class="feature-bulb">
+        <strong>Free Comms</strong>
+        <p>Message your matches without buying tokens. Chatting is, and always will be, 100% free.</p>
+    </div>
+    <div class="feature-bulb premium">
+        <strong>The Vault <span class="premium-tag">Premium</span></strong>
+        <p>Our 12-hour 'Drunk Mode'. Lock your late-night chats so you don't send texts you'll regret tomorrow.</p>
+    </div>
+</div>
 
         footer {
             margin-top: auto;
@@ -243,8 +226,8 @@
     <p class="description">Forget the group chat chaos. See where the vibe is, find your mates, and lock down your plans.</p>
 
     <div class="founder-card">
-        <h3>Founder 100: 84 Spots Remaining</h3>
-        <p>Join the waitlist today and get lifetime access to all freemium features, including The Vault, plus an exclusive profile badge.</p>
+        <h3>The Vanguard 50: 48 Spots Remaining</h3>
+        <p>Join the waitlist. Be the first to experience the new age of the pub and claim your exclusive Vanguard profile badge before the city catches on.</p>
     </div>
 
     <form action="https://formspree.io/f/xlgwjoyl" method="POST">
@@ -253,18 +236,26 @@
     </form>
 </div>
 
-<div class="features">
-    <div class="feature-item">
+<div class="features-grid">
+    <div class="feature-bulb">
         <strong>The Radar</strong>
-        <p>A live heatmap showing exactly which venues in the city are busy right now.</p>
+        <p>A live heatmap showing exactly which venues in Liverpool are going off right now.</p>
     </div>
-    <div class="feature-item">
-        <strong>The Vault</strong>
-        <p>Our 12-hour 'Drunk Mode' lock to stop you sending those texts you'll regret tomorrow.</p>
+    <div class="feature-bulb">
+        <strong>Zero Limits</strong>
+        <p>Unlimited swiping and matching. We don't cap your social life like the other apps do.</p>
     </div>
-    <div class="feature-item">
-        <strong>Always Free</strong>
-        <p>Matching and messaging your mates will always be free. No paywalls, no barriers.</p>
+    <div class="feature-bulb">
+        <strong>Total Transparency</strong>
+        <p>See exactly who is interested in you instantly. No blurred profiles, no paywalls to reveal them.</p>
+    </div>
+    <div class="feature-bulb">
+        <strong>Free Comms</strong>
+        <p>Message your matches without buying tokens. Chatting is, and always will be, 100% free.</p>
+    </div>
+    <div class="feature-bulb premium">
+        <strong>The Vault <span class="premium-tag">Premium</span></strong>
+        <p>Our 12-hour 'Drunk Mode'. Lock your late-night chats so you don't send texts you'll regret tomorrow.</p>
     </div>
 </div>
 
